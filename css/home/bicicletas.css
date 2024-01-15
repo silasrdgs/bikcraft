@@ -27,13 +27,18 @@
 }
 
 .home-det::before {
-  content: '';
+  content: "";
   width: 12px;
   height: 8px;
   background-color: var(--cor-p1);
   display: inline-block;
   margin-right: 8px;
   vertical-align: middle;
+  transition: 0.3s;
+}
+
+.home-bicicletas a:hover .home-det::before {
+  width: 18px;
 }
 
 @media (max-width: 1000px) {
