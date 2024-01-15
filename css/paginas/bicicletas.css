@@ -1,0 +1,190 @@
+.page-bicicletas {
+  display: grid;
+  margin: 120px auto;
+  gap: 60px;
+}
+
+.bicicletas-ct {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1250px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.bicicletas-ct img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.valor {
+  font: 500 1.25rem/24px 'Roboto', Sans-Serif;
+  position: relative;
+}
+
+.nimbus-valor::after {
+  content: 'R$ 4999';
+  display: block;
+  background-color: var(--cor-c12);
+  color: var(--cor-c1);
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  padding: 8px 16px 8px 8px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.nebula-valor::after {
+  content: 'R$ 3999';
+  display: block;
+  background-color: var(--cor-c12);
+  color: var(--cor-c1);
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  padding: 8px 16px 8px 8px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.magic-valor::after {
+  content: 'R$ 2499';
+  display: block;
+  background-color: var(--cor-c12);
+  color: var(--cor-c1);
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  padding: 8px 16px 8px 8px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.bicicletas-ct h2 {
+  font: 600 2.25rem/40px 'Poppins', Sans-Serif;
+  grid-column: 1 / -1;
+}
+
+.bicicletas-ct h2:before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 8px;
+  margin-bottom: 8px;
+  background-color: var(--cor-p1);
+}
+
+.bicicletas-ct p {
+  font: 400 1.25rem/24px 'Roboto', Sans-Serif;
+  color: var(--cor-c8);
+  grid-column: 1 / -1;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  max-width: 45ch;
+}
+
+.bicicletas-ct ul {
+  display: grid;
+  font: 500 1.25rem/20px 'Poppins', Sans-Serif;
+  color: var(--cor-c8);
+  margin-bottom: 15px;
+  gap: 10px;
+  grid-column: 1;
+}
+
+.bicicletas-ct a {
+  grid-column: 2;
+  place-self: end;
+}
+
+.bicicleta-bg:nth-child(even) {
+  background: linear-gradient(90deg, var(--cor-w) 29%, var(--cor-c11) 0%);
+  padding: 60px 0;
+}
+
+.bicicleta-bg:nth-child(even) h2 {
+  color: var(--cor-w);
+}
+
+.bicicleta-bg:nth-child(even) p,
+.bicicleta-bg:nth-child(even) li {
+  color: var(--cor-c5);
+}
+
+.bicicletas-infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+}
+
+.bicicletas-infos li:nth-child(1)::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../../img/icones/eletrica.svg') no-repeat center;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.bicicletas-infos li:nth-child(2)::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../../img/icones/carbono.svg') no-repeat center;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.bicicletas-infos li:nth-child(3)::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../../img/icones/velocidade.svg') no-repeat center;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.bicicletas-infos li:nth-child(4)::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../../img/icones/rastreador.svg') no-repeat center;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.bicicletas-infos a:after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  background: url('../../img/icones/seta.svg') no-repeat center;
+  margin-left: 16px;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+
+@media (max-width: 1200px) {
+  .bicicletas-ct img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* @media (max-width: 1050px) {
+  .bicicletas-ct {
+    grid-template-columns: 1fr;
+  }
+} */

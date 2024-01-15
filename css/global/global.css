@@ -1,0 +1,34 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #111111;
+}
+
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1270px) {
+  .padding-bg {
+    padding: 0 40px;
+  }
+}

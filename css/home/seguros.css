@@ -1,0 +1,153 @@
+.section-seguros {
+  background-color: var(--cor-c11);
+  padding-top: 90px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.section-seguros h1 {
+  color: var(--cor-w);
+}
+
+.section-seguros::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  bottom: 40px;
+  left: 40px;
+  background: url(../../img/dec/bottom-left.svg) no-repeat center;
+}
+
+.container-seguros {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.grid-seguros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.seguros a {
+  grid-column: 1 / -1;
+  place-self: start;
+  padding: 15px 30px;
+  line-height: 26px;
+}
+
+.seguros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-c12);
+  border-radius: 5px;
+  padding: 32px;
+  /* column-gap: 150px; */
+  padding-left: 64px;
+  margin: auto 0;
+  position: relative;
+}
+
+.seguros h2 {
+  font-size: 2.25rem;
+  line-height: 48px;
+  justify-self: start;
+}
+
+.seguros-lista {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: grid;
+  gap: 20px;
+  position: relative;
+  grid-column: 1 / -1;
+}
+
+.seguros-lista p::before {
+  /* position: absolute; */
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(../../img/icones/lista.svg) no-repeat center;
+  vertical-align: middle;
+  margin-left: -23px;
+  margin-right: 8px;
+}
+
+.seguros-valor {
+  justify-self: end;
+  position: relative;
+  margin-left: 100px;
+}
+
+.seguros-valor::after {
+  font-size: 0.75rem;
+  line-height: 16px;
+  content: 'mensal';
+  display: block;
+  color: var(--cor-c6);
+  text-align: end;
+}
+
+.prata {
+  margin-left: auto;
+}
+
+.prata h2 {
+  color: var(--cor-c6);
+}
+
+.prata a {
+  background: var(--cor-c10);
+  color: var(--cor-c4);
+}
+
+.ouro {
+  margin-right: auto;
+}
+
+.ouro h2 {
+  color: var(--cor-p1);
+}
+
+.seguros p {
+  color: var(--cor-w);
+}
+
+@media (max-width: 900px) {
+  .grid-seguros {
+    grid-template-columns: 1fr;
+  }
+
+  .seguros {
+    margin: 0 auto;
+    padding-left: 32px;
+  }
+
+  .seguros-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .seguros-lista li:nth-child(3) {
+    grid-area: -1;
+  }
+
+  .seguros > a {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .seguros-lista p::before {
+    display: none;
+  }
+
+  .container-seguros > h1 {
+    text-align: center;
+  }
+}

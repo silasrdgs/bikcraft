@@ -1,0 +1,28 @@
+@import url('./global/global.css');
+
+/* Utilidades */
+@import url('./utilidades/tipografia.css');
+@import url('./utilidades/cores.css');
+@import url('./utilidades/btn.css');
+@import url('./utilidades/formulario.css');
+@import url('./utilidades/titulo.css');
+
+
+/* home */
+@import url('./home/introducao.css');
+@import url('./home/bicicletas.css');
+@import url('./home/tecnologia.css');
+@import url('./home/parceiros.css');
+@import url('./home/depoimento.css');
+@import url('./home/seguros.css');
+
+
+/* Global */
+@import url('./global/header.css');
+@import url('./global/footer.css');
+
+
+/* paginas */
+@import url('./paginas/contatos/contato.css');
+@import url('./paginas/contatos/lojas.css');
+@import url('./paginas/bicicletas.css');

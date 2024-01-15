@@ -1,0 +1,19 @@
+.titulo-bg {
+  background-color: var(--cor-c11);
+}
+
+.titulo-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 60px 0;
+  color: var(--cor-w);
+}
+
+.titulo-container h3 {
+  line-height: 32px;
+  color: var(--cor-c5);
+}
+
+.titulo-container h1 {
+  color: var(--cor-w);
+}

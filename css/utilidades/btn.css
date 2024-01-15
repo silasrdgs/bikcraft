@@ -1,0 +1,28 @@
+.btn {
+    padding: 15px 30px;
+    border-radius: 5px;
+    background: var(
+      --gradiente,
+      linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%)
+    );
+    color: var(--cor-p5);
+    grid-column: 1 / -1;
+  }
+
+
+  .btn:hover {
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 1270px) {
+    .btn {
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .btn {
+      padding: 8px 16px;
+    }
+  }

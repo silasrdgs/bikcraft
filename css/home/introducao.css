@@ -1,0 +1,143 @@
+.main {
+  background-color: var(--cor-c12);
+  position: relative;
+  z-index: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.main-descricao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.main-descricao h1 {
+  color: var(--cor-w);
+  margin-bottom: 30px;
+}
+
+.main-descricao p {
+  color: var(--cor-c5);
+  max-width: 40ch;
+  margin-bottom: 20px;
+}
+
+h1 > span {
+  color: var(--cor-p1);
+}
+
+.main-container > img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.main::after {
+  content: '';
+  width: 100%;
+  height: calc(100% / 8);
+  background-color: var(--cor-w);
+  position: absolute;
+  bottom: -1px;
+  z-index: -1;
+}
+
+.main::before {
+  content: '';
+  width: 52px;
+  height: 52px;
+  background: url('../../img/dec/bottom-left.svg') center;
+  position: absolute;
+  bottom: 130px;
+  left: 40px;
+  z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .main p {
+    max-width: 35ch;
+  }
+
+  .main-container {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .main::before {
+    bottom: 20px;
+    left: 40px;
+  }
+
+  .main-descricao h1 {
+    margin-bottom: 15px;
+    font-size: 3.2rem;
+  }
+
+  .main-descricao p {
+    margin-bottom: 10px;
+  }
+
+  .main-descricao {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main p {
+    max-width: none;
+  }
+
+  .main-container {
+    grid-template-columns: 4fr 3fr;
+  }
+
+  .main-descricao h1 {
+    margin-bottom: 15px;
+    font-size: 3rem;
+  }
+
+  .main-descricao p {
+    margin-bottom: 10px;
+  }
+
+  .main::before {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+
+  .main-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 0 0px;
+  }
+
+  .main-descricao p {
+    max-width: 45ch;
+  }
+
+  .main-container > img {
+    display: none;
+  }
+
+  .main::after {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+:root {
+    --cor-c12: #000000;
+    --cor-c11: #111111;
+    --cor-c10: #2E2E2E;
+    --cor-c9: #404040;
+    --cor-c8: #595959;
+    --cor-c7: #717171;
+    --cor-c6: #9C9C9C;
+    --cor-c5: #B2B2B2;
+    --cor-c4: #CCCCCC;
+    --cor-c0: #DEDEDE;
+    --cor-c2: #EDEDED;
+    --cor-c1: #F7F7F7;
+    --cor-w: #FFFFFF;
+    --cor-p5: #332200;
+    --cor-p4: #664400;
+    --cor-p3: #A66F00;
+    --cor-p2: #E4A30B;
+    --cor-p1: #FFBB00;
+    --gradiente: var(--gradiente, linear-gradient(180deg, #FFBF00 0%, #F2A50C 100%));
+}
